@@ -15,21 +15,21 @@ def add_element_to_start_of_array(array, element)
 end
 
 def remove_element_from_end_of_array(array)
-  array.pop 
+  array.delete_at(array.length-1) 
 end
 
 def remove_element_from_start_of_array(array)
-  array.shift
+  array.delete_at(0)
 end
 
 def retrieve_element_from_index(array, index_number)
-  array[index_number]
+  array.fetch(index_number) #OR array.at(index_number)
 end
 
 def retrieve_first_element_from_array(array)
-  array[0]
+  array.first
 end
 
 def retrieve_last_element_from_array(array)
-  array[array.length-1]
+  array.last
 end
